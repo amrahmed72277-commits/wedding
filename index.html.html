@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف | Amr & Aya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cinematic-overlay"></div>
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <div class="music-btn" id="musicBtn">🎵</div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/wedding-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="welcome" id="welcomeSection">
+        <div class="title">
+            <h2 class="fade-in">يسرنا دعوتكم</h2>
+            <h1 class="fade-in-delayed">Amr & Aya</h1>
+            <p class="fade-in-delayed-more">لحضور حفل زفافنا الميمون</p>
+        </div>
+
+        <div class="envelope-area">
+            <div id="envelope" class="envelope">
+                <div class="lid"></div>
+                <div class="pocket"></div> 
+                <div class="letter">
+                    <img src="110323.png" alt="Wedding Invitation Preview">
+                </div>
+                <div class="heart">❤</div>
+            </div>
+            <p class="tap-text" id="tapText">اضغط على الظرف لفتح الدعوة</p>
+        </div>
+    </section>
+
+    <section id="invitationSection" class="hidden">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="110323.png" alt="Wedding Invitation Full Image">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="locationBtn">📍 موقع القاعة</button>
+            <button id="calendarBtn">📅 حفظ في التقويم</button>
+            <button id="downloadBtn">💾 تحميل الدعوة</button>
+            <button id="shareBtn">📤 مشاركة الرابط</button>
+        </div>
+
+        <div class="countdown-box">
+            <h3>باقي على ليلة العمر</h3>
+            <div id="timer"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
